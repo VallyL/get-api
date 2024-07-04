@@ -17,6 +17,8 @@ async function fetchPost(postURL) {
 }
 
 function createPost(post) {
+  trigger.textContent = "";
+
   const postIdInfo = document.createElement("p");
   const titleInfo = document.createElement("h3");
   const bodyInfo = document.createElement("p");
@@ -35,6 +37,16 @@ async function loadPost() {
 
 loadPost();
 
-left.addEventListener("click", () => {});
+left.addEventListener("click", () => {
+  if (postIndex > 0) {
+    trigger.textContent = "Loading ...";
+    postIndex--;
+    loadPost();
+  }
+});
 
-right.addEventListener("click", () => {});
+right.addEventListener("click", () => {
+  trigger.textContent = "Loading ...";
+  postIndex++;
+  loadPost();
+});
