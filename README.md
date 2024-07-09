@@ -14,4 +14,9 @@
   - User Interface: Improve the user interface with more visual elements and better styling.
   - Pagination: Implement pagination for larger datasets to avoid fetching too many posts at once.
 
+# Technologies:
+  - HTML
+  - Scss
+  - JavaScript
+
 # This is a basic example showcasing asynchronous data retrieval, caching, and dynamic content updates in a web application. Feel free to explore and enhance it further!
